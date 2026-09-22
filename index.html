@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Websites</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: #f5eee5;
+            color: #3b2418;
+        }
+
+        header {
+            text-align: center;
+            padding: 70px 20px 40px;
+        }
+
+        header p {
+            color: #a66a3f;
+            font-size: 16px;
+            letter-spacing: 4px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            font-size: 50px;
+            margin-bottom: 15px;
+        }
+
+        header h1 span {
+            color: #bd7b43;
+        }
+
+        header .subtitle {
+            color: #795b48;
+            font-size: 18px;
+            letter-spacing: 1px;
+        }
+
+        .websites {
+            width: 90%;
+            max-width: 1100px;
+            margin: 30px auto 70px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .card {
+            background: #fffaf5;
+            border: 1px solid #e4d3c2;
+            border-top: 5px solid #96613b;
+            border-radius: 15px;
+            padding: 40px 25px;
+            text-align: center;
+            box-shadow: 0 8px 20px rgba(80, 50, 30, 0.08);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(80, 50, 30, 0.15);
+        }
+
+        .number {
+            width: 70px;
+            height: 70px;
+            margin: 0 auto 25px;
+            background: #bd7b43;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .card h2 {
+            font-size: 25px;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            color: #795b48;
+            line-height: 1.6;
+            min-height: 50px;
+            margin-bottom: 25px;
+        }
+
+        .button {
+            display: inline-block;
+            background: #96613b;
+            color: white;
+            text-decoration: none;
+            padding: 13px 28px;
+            border-radius: 7px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            background: #6f4328;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            color: #8b6b55;
+            border-top: 1px solid #dfcdbb;
+        }
+
+        @media (max-width: 800px) {
+            .websites {
+                grid-template-columns: 1fr;
+                max-width: 500px;
+            }
+
+            header h1 {
+                font-size: 38px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <p>MY WEBSITES</p>
+
+        <h1>
+            Welcome to <span>My Websites</span>
+        </h1>
+
+        <div class="subtitle">
+            Choose a website below to get started.
+        </div>
+    </header>
+
+
+    <section class="websites">
+
+        <!-- Website One -->
+        <div class="card">
+            <div class="number">1</div>
+
+            <h2>Website One</h2>
+
+            <p>
+                My landing page created using HTML and CSS.
+            </p>
+
+            <a href="landing-page-html-css/" class="button">
+                Visit Website
+            </a>
+        </div>
+
+
+        <!-- Website Two -->
+        <div class="card">
+            <div class="number">2</div>
+
+            <h2>Website Two</h2>
+
+            <p>
+                My landing page created using HTML only.
+            </p>
+
+            <a href="landing-page-html/" class="button">
+                Visit Website
+            </a>
+        </div>
+
+
+        <!-- Website Three -->
+        <div class="card">
+            <div class="number">3</div>
+
+            <h2>Website Three</h2>
+
+            <p>
+                Visit my personal website and check it out.
+            </p>
+
+            <a href="personal-page/" class="button">
+                Visit Website
+            </a>
+        </div>
+
+    </section>
+
+
+    <footer>
+        <p>© 2026 My Websites. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
